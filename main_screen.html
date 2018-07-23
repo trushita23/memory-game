@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matching Game</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wendy+One">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/app_responsive.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Matching Game</h1>
+    </header>
+
+    <!-- Score panel -->
+    <section class="score-panel">
+      <div class="restart">
+        <i class="fa fa-repeat"></i>
+      </div>
+      <ul class="stars">
+        <li><i class="fa fa-star fa-2x"></i></li>
+        <li><i class="fa fa-star fa-2x"></i></li>
+        <li><i class="fa fa-star fa-2x"></i></li>
+      </ul>
+      <span class="moves">0</span> MOVES
+      <p class="time">
+        TIME :<span id="mins"> </span>:<span id="secs"></span>
+      </p>
+      <p class="exit"><a href="index.html">EXIT</a></p>
+    </section>
+
+    <!-- pop up modal on finishing the game -->
+    <div class="popUp__Container hide">
+      <div class="popUp">
+        <div class="popUp__Content">
+          <ul class="stars">
+            <li><i class="fa fa-star fa-2x"></i></li>
+            <li><i class="fa fa-star fa-2x"></i></li>
+            <li><i class="fa fa-star fa-2x "></i></li>
+            <li class="scoreCard msg">AWESOME!!</li>
+          </ul>
+          <p class="scoreCard">MOVES :<span class="moves"></span></p>
+          <p class="scoreCard">TIME TAKEN : <span id="res_mins">:</span> <span id="res_secs"> </span></p>
+          <button type="button" name="play" class="button">Play</button>
+          <button type="button" name="close" class="button">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- display all cards -->
+    <ul class="deck">
+    </ul>
+  </div>
+
+  <!-- success audio if the cards match -->
+  <audio id="success">
+    <source src="audio/success.wav" type="audio/wav">
+  </audio>
+
+  <!-- game won sound when pop up is shown -->
+  <audio id="won-Sound">
+    <source src="audio/game-won.wav" type="audio/wav">
+</audio>
+  <script src="js/app.js">
+  </script>
+</body>
+
+</html>
