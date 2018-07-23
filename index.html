@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wendy+One">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/home_responsive.css">
+  <title>Memory Game</title>
+</head>
+
+
+<body>
+  <!-- background game music -->
+  <audio autoplay>
+    <source src="audio/game-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <!-- pop up for instruction or credit board when user clicks on either instruction or credits button -->
+    <section class="popUp__Container hide">
+      <div class="popUp">
+        <div class="board hide">
+          <div class="instructions">
+            <div class="cross inst">
+              <i class="fa fa-times-circle"></i>
+            </div>
+            <h2>INSTRUCTIONS</h2>
+            <p>Match the same pair of cards.</p>
+            <p>Score is based on minimum number of moves.</p>
+            <h2>Rating</h2>
+            <ul>
+              <li> <img src="img/stars3.png" alt="3_stars"> - Awesome.<span class="rating_desc">You have an excellent memory!</span></li>
+              <li><img src="img/stars2.png" alt="2_stars"> - Good. <span class="rating_desc">You are on the verge of being a pro!</span></li>
+              <li><img src="img/stars1.png" alt="2_stars"> - Try Again! <span class="rating_desc">Keep improving your memory!</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="board credit hide">
+          <div class="credit__content">
+            <div class="cross cred">
+              <i class="fa fa-times-circle"></i>
+            </div>
+            <h1>CREDITS</h1>
+            <h2>Created By:</h2>
+            <p>Trushita Maurya.</p>
+            <p> &copy; 2018. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home screen menu options -->
+    <section class="content">
+      <h1>MEMORY  GAME</h1>
+      <div class="game__menu">
+        <a href="main_screen.html">
+           <button type="button" class="button" >Play</button>
+       </a>
+        <button type="button" class="button" id="btn_inst">Instructions</button>
+        <button type="button" class="button" id="btn_credit">Credits</button>
+      </div>
+    </section>
+  </div>
+  <script src="js/home.js"></script>
+</body>
+
+</html>
